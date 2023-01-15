@@ -36,7 +36,6 @@ public class UserController {
     public String createUser(Model model) {
         User user = new User();
         model.addAttribute("user", user);
-
         return "users_info";
     }
 
@@ -49,7 +48,6 @@ public class UserController {
 
     @GetMapping("/delete/{id}")
     public String deleteUser(@PathVariable("id") Long id) {
-
         userService.delete(id);
         return "redirect:/";
     }
@@ -58,7 +56,6 @@ public class UserController {
     public String updateUserForm(@PathVariable("id") Long id, Model model) {
         User userForm = userService.getUser(id);
         model.addAttribute("userForm", userForm);
-        System.out.println("da!!!");
         return "users_update";
 
 
@@ -66,9 +63,7 @@ public class UserController {
 
     @PostMapping("/update")
     public String updateUser(User user) {
-        System.out.println("nooo!!!");
         userService.update(user);
-        System.out.println("yees!!!");
         return "redirect:/";
     }
 

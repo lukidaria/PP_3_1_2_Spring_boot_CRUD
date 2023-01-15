@@ -1,15 +1,16 @@
 package com.example.pp_3_1_2_spring_boot_crud.service;
 
 
-import com.example.pp_3_1_2_spring_boot_crud.DAO.UserDao;
+import com.example.pp_3_1_2_spring_boot_crud.dao.UserDao;
 import com.example.pp_3_1_2_spring_boot_crud.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 
 import java.util.List;
 
-@Component
+@Service
 public class UserServiceImpl implements UserService {
 
     @Autowired

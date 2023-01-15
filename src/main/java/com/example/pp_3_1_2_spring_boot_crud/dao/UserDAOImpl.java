@@ -1,4 +1,4 @@
-package com.example.pp_3_1_2_spring_boot_crud.DAO;
+package com.example.pp_3_1_2_spring_boot_crud.dao;
 
 
 import com.example.pp_3_1_2_spring_boot_crud.model.User;
